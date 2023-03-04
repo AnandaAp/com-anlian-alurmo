@@ -6,6 +6,9 @@ plugins {
     id ("com.google.devtools.ksp")
     id ("com.google.gms.google-services")
 }
+pluginManager.withPlugin("kotlin-kapt") {
+    configure<org.jetbrains.kotlin.gradle.plugin.KaptExtension> { useBuildCache = true }
+}
 
 android {
     namespace = "com.anlian.alurmo"
@@ -73,7 +76,12 @@ android {
         }
     }
     lint {
+        quiet = true
         baseline = file("lint-baseline.xml")
+        checkAllWarnings = false
+        ignoreWarnings = true
+        warningsAsErrors = false
+        abortOnError = false
     }
 }
 

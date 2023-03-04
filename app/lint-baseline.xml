@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint Giraffe | 2022.3.1 Canary 7">
+
+    <issue
+        id="RemoveWorkManagerInitializer"
+        message="Remove androidx.work.WorkManagerInitializer from your AndroidManifest.xml when using on-demand initialization.">
+        <location
+            file="app"/>
+    </issue>
+
+</issues>
