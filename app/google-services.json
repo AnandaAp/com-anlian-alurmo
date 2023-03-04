@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "886298019450",
+    "project_id": "alurmo-3e4f7",
+    "storage_bucket": "alurmo-3e4f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886298019450:android:8c8cc1daba2c305c211dc3",
+        "android_client_info": {
+          "package_name": "com.anlian.alurmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886298019450-pa89kbcr7si5g1pp6ebq7qibakf96rhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anlian.alurmo",
+            "certificate_hash": "a1caefc2b32911f4291a0cb2929e13265244a2f9"
+          }
+        },
+        {
+          "client_id": "886298019450-oolvrokl0von6qfekh97haa03sjghuin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0HbI749k8mJjWFc4QJdDDF3RlZ0H1OxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886298019450-oolvrokl0von6qfekh97haa03sjghuin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
