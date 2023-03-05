@@ -63,7 +63,7 @@ jobs:
           sarif-result-file: "ethicalcheck-results.sarif"
 
        - name: Upload sarif file to repository
-         uses: AnandaAp/com-anlian-alurmo/codeQl/sarif@feature/23.3/integration
+         uses: AnandaAp/com-anlian-alurmo/.github/workflows@feature/23.3/integration
          with:
           sarif_file: ./ethicalcheck-results.sarif
 
