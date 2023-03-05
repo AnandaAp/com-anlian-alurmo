@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="dimen_42">42</integer>
+    <integer name="dimen_16">16</integer>
+    <integer name="dimen_8">8</integer>
+    <integer name="dimen_1">1</integer>
+    <integer name="dimen_10">10</integer>
+    <integer name="dimen_2">2</integer>
+    <integer name="dimen_20">20</integer>
+</resources>

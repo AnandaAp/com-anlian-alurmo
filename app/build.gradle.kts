@@ -32,6 +32,14 @@ android {
             java.srcDir("src/main/java")
             kotlin.srcDir("src/main/kotlin")
         }
+        named("androidTest") {
+            java.srcDir("src/androidTest/java")
+            kotlin.srcDir("src/androidTest/kotlin")
+        }
+        named("test") {
+            java.srcDir("src/test/java")
+            kotlin.srcDir("src/test/kotlin")
+        }
     }
 
     buildTypes {
@@ -121,6 +129,7 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
     implementation ("androidx.activity:activity-compose:1.6.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 
     testImplementation ("junit:junit:4.13.2")
     androidTestImplementation ("androidx.test.ext:junit:1.1.5")

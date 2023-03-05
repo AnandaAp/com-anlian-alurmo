@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.anlian.alurmo.ui.theme.AlurmoMaterial3Theme
 import com.anlian.alurmo.ui.theme.AlurmoMaterialTheme
+import com.anlian.alurmo.ui.view.onboarding.authentication.OnBoarding
 import dagger.hilt.android.AndroidEntryPoint
 
 const val TAG = "ActivityHelper"
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    OnBoarding()
                 }
             }
         }

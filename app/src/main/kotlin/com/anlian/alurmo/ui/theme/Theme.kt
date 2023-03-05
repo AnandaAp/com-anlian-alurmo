@@ -53,7 +53,7 @@ private fun material3DarkColor() = darkColorScheme(
     primary = RubyRed,
     secondary = SandyBrown,
     tertiary = Carmine,
-    onPrimary = colorResource(id = R.color.white)
+    onPrimary = Background
 )
 
 @Composable
@@ -61,7 +61,7 @@ private fun material3LightColor() = lightColorScheme(
     primary = AmaranthPurple,
     secondary = MellowApricot,
     tertiary = FireEngineRed,
-    onPrimary = colorResource(id = R.color.black),
+    onPrimary = colorResource(id = R.color.white),
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),

@@ -2,4 +2,14 @@
     <string name="app_name">Alurmo</string>
     <string name="web_client_id">767373466281-i8qcub9uu32f36s79e5ns62bsulog0l7.apps.googleusercontent.com</string>
     <string name="web_client_id_json">886298019450-pa89kbcr7si5g1pp6ebq7qibakf96rhe.apps.googleusercontent.com</string>
+    <string name="from">oleh %s</string>
+    <string name="team">DU ANYAM</string>
+    <string name="creative_text">Revolusi Digital Untuk Usaha Kreatif</string>
+    <string name="sign_up_label">Daftar</string>
+    <string name="sign_in_label">Masuk</string>
+    <string name="or_label">atau</string>
+    <string name="authentication_with_provider">%s dengan %s</string>
+    <string name="google">Google</string>
+    <string name="version">Versi %s</string>
+    <string name="app_version">1.0.0</string>
 </resources>
