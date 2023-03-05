@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "integration" ]
   pull_request:
-    branches: [ "integration" ]
+    branches: [ "integration","feature/23.3/integration" ]
 
 jobs:
   build:
@@ -22,5 +22,13 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: Clean the build
+      run: ./gradlew clean --quiet
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Clean the build
+      run: ./gradlew clean --quiet
+    - name: Substitute the build
+      run: ./gradlew assemble
+    - name: Finish the Build
+      run: ./gradlew assemble
