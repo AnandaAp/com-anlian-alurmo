@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.Color
 val RubyRed = Color(0xFFa4031f)
 val Carmine = Color(0xFF8C031A)
 val SandyBrown = Color(0xFFF2A359)
+val Background = Color(red = 28, green = 27, blue = 31)
 
 val AmaranthPurple = Color(0xFFa91f5b)
 val TyrianPurple = Color(0xFF790F52)
