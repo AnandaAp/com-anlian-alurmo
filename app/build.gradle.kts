@@ -32,6 +32,14 @@ android {
             java.srcDir("src/main/java")
             kotlin.srcDir("src/main/kotlin")
         }
+        named("androidTest") {
+            java.srcDir("src/androidTest/java")
+            kotlin.srcDir("src/androidTest/kotlin")
+        }
+        named("test") {
+            java.srcDir("src/test/java")
+            kotlin.srcDir("src/test/kotlin")
+        }
     }
 
     buildTypes {
