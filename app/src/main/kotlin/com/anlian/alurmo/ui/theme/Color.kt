@@ -14,6 +14,10 @@ val AmaranthPurple = Color(0xFFa91f5b)
 val TyrianPurple = Color(0xFF790F52)
 val CherryBlossomPink = Color(0xFFF6A5B0)
 
+val AmaranthPurple = Color(0xFFa91f5b)
+val TyrianPurple = Color(0xFF790F52)
+val CherryBlossomPink = Color(0xFFF6A5B0)
+
 /**
  * Dark Mode Color Pallet
  */
