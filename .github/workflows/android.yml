@@ -2,7 +2,7 @@ name: Android CI
 
 on:
   push:
-    branches: [ "integration" ]
+    branches: [ "integration", "feature/23.3/integration" ]
   pull_request:
     branches: [ "integration","feature/23.3/integration" ]
 

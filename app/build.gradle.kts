@@ -76,7 +76,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.2"
+        kotlinCompilerExtensionVersion = "1.4.3"
     }
     packaging {
         resources {
@@ -102,6 +102,7 @@ dependencies {
     val hilt = "1.0.0"
     val hiltCompose = "2.45"
     val glide = "4.15.0"
+    val lifecycle = "2.5.1"
 
     implementation(composeBom)
     implementation(firebaseBom)
@@ -130,26 +131,29 @@ dependencies {
     implementation ("androidx.activity:activity-compose:1.6.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("androidx.navigation:navigation-compose:2.6.0-alpha06")
 
-    testImplementation ("junit:junit:4.13.2")
-    androidTestImplementation ("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //hilt
-    implementation ("com.google.dagger:hilt-android:$hiltCompose")
-    kapt ("com.google.dagger:hilt-android-compiler:$hiltCompose")
-    kapt ("androidx.hilt:hilt-compiler:$hilt")
-    implementation ("androidx.hilt:hilt-work:$hilt")
-    implementation ("androidx.work:work-runtime-ktx:2.8.0")
-    implementation ("androidx.hilt:hilt-navigation-compose:1.1.0-alpha01")
+    kapt("com.google.dagger:dagger-compiler:2.28.3")
+    kapt("com.google.dagger:hilt-android-compiler:$hiltCompose")
+    kapt("androidx.hilt:hilt-compiler:$hilt")
+    implementation("androidx.hilt:hilt-work:$hilt")
+    implementation("com.google.dagger:dagger:$hiltCompose")
+    implementation("com.google.dagger:hilt-android:$hiltCompose")
+    implementation("androidx.work:work-runtime-ktx:2.8.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0-alpha01")
 
     //coil
-    implementation ("io.coil-kt:coil:$coil")
-    implementation ("io.coil-kt:coil-compose:$coil")
+    implementation("io.coil-kt:coil:$coil")
+    implementation("io.coil-kt:coil-compose:$coil")
 
     //glide
-    implementation ("com.github.bumptech.glide:glide:$glide")
-    ksp ("com.github.bumptech.glide:compiler:$glide")
+    implementation("com.github.bumptech.glide:glide:$glide")
+    ksp("com.github.bumptech.glide:compiler:$glide")
 
     //room database
     implementation ("androidx.room:room-runtime:$roomDatabase")
@@ -162,16 +166,26 @@ dependencies {
     implementation ("com.google.accompanist:accompanist-themeadapter-appcompat:$accompanist")
     implementation ("com.google.accompanist:accompanist-themeadapter-material:$accompanist")
     implementation ("com.google.accompanist:accompanist-themeadapter-material3:$accompanist")
-    implementation ("com.google.accompanist:accompanist-themeadapter-core:$accompanist")
-    implementation ("com.google.accompanist:accompanist-pager:$accompanist")
-    implementation ("com.google.accompanist:accompanist-pager-indicators:$accompanist")
-    implementation ("com.google.accompanist:accompanist-placeholder-material:$accompanist")
-    implementation ("com.google.accompanist:accompanist-drawablepainter:$accompanist")
-    implementation ("com.google.accompanist:accompanist-flowlayout:$accompanist")
-    implementation ("com.google.accompanist:accompanist-navigation-animation:$accompanist")
-    implementation ("com.google.accompanist:accompanist-navigation-material:$accompanist")
-    implementation ("com.google.accompanist:accompanist-webview:$accompanist")
-    implementation ("com.google.accompanist:accompanist-adaptive:$accompanist")
+    implementation("com.google.accompanist:accompanist-themeadapter-core:$accompanist")
+    implementation("com.google.accompanist:accompanist-pager:$accompanist")
+    implementation("com.google.accompanist:accompanist-pager-indicators:$accompanist")
+    implementation("com.google.accompanist:accompanist-placeholder-material:$accompanist")
+    implementation("com.google.accompanist:accompanist-drawablepainter:$accompanist")
+    implementation("com.google.accompanist:accompanist-flowlayout:$accompanist")
+    implementation("com.google.accompanist:accompanist-navigation-animation:$accompanist")
+    implementation("com.google.accompanist:accompanist-navigation-material:$accompanist")
+    implementation("com.google.accompanist:accompanist-webview:$accompanist")
+    implementation("com.google.accompanist:accompanist-adaptive:$accompanist")
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle")
+    implementation("androidx.lifecycle:lifecycle-service:$lifecycle")
+    implementation("androidx.lifecycle:lifecycle-process:$lifecycle")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle")
+    ksp("androidx.lifecycle:lifecycle-compiler:$lifecycle")
+    testImplementation("androidx.lifecycle:lifecycle-runtime-testing:$lifecycle")
+
 }
 
 // Allow references to generated code

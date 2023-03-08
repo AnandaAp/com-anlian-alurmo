@@ -33,7 +33,9 @@ import java.util.Locale
 fun OnboardingButtonLayout(
     state: OnboardingButtonState,
     modifier: Modifier,
-    radius: Dp = integerResource(id = R.integer.dimen_8).dp
+    radius: Dp = integerResource(id = R.integer.dimen_8).dp,
+    topButtonOnClick: () -> Unit = {},
+    bottomButtonOnClick: () -> Unit = {},
 ) {
     val provider = stringResource(id = R.string.google)
     val topBtnText = when (state) {
@@ -56,9 +58,8 @@ fun OnboardingButtonLayout(
         ).uppercase(Locale.ROOT)
     }
     val isEnabled = when (state) {
-        SignIn -> true
         Onboarding -> false
-        SignUp -> true
+        else -> true
     }
     val secondBtnTrailingIcon =
         if (state != Onboarding) painterResource(id = R.drawable.google)
@@ -70,7 +71,7 @@ fun OnboardingButtonLayout(
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             AlurmoButton(
-                onClick = { },
+                onClick = topButtonOnClick,
                 text = topBtnText,
                 radius = radius,
                 modifier = modifier,
@@ -82,7 +83,7 @@ fun OnboardingButtonLayout(
             )
 
             AlurmoButton(
-                onClick = { },
+                onClick = bottomButtonOnClick,
                 modifier = modifier,
                 radius = radius,
                 text = bottomBtnText,

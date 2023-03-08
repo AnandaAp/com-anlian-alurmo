@@ -6,7 +6,7 @@ buildscript {
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 plugins {
-    val appVersion = "8.1.0-alpha07"
+    val appVersion = "8.1.0-alpha08"
     val kotlinVersion = "1.8.10"
     val kspVersion = "1.8.10-1.0.9"
     val hiltVersion = "2.44"

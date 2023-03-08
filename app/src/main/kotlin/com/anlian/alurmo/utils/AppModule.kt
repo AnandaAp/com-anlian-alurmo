@@ -1,6 +1,7 @@
 package com.anlian.alurmo.utils
 
 import android.content.Context
+import androidx.lifecycle.ViewModelStore
 import com.anlian.alurmo.R
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -67,4 +68,8 @@ object AppModule {
         val id = account?.idToken
         return GoogleAuthProvider.getCredential(id, null)
     }
+
+    @Provides
+    @Singleton
+    fun provideViewModelStore() = ViewModelStore()
 }
